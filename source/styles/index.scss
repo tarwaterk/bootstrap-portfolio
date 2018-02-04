@@ -7,3 +7,34 @@
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
+
+.container {
+    @media (min-width: 576px) {
+        max-width: 768px;
+    }
+    @media (min-width: 768px) {
+        max-width: 1024px;
+    }
+}
+
+[class^="col-"] {
+    margin-top: 30px;
+}
+
+.jumbotron, .jumbotron-fluid {
+    position: relative;
+    height: 90vh;
+    background: url('../images/fre-sonneveld-plateaus.jpg') bottom no-repeat;
+    background-size: cover;
+
+    @media (min-width: 768px) {
+        height: 50vw;
+        max-height: 800px;
+    }
+}
+
+.jumbotron-text {
+    position: absolute;
+    bottom: 2em;
+    color: #FFF;
+}
